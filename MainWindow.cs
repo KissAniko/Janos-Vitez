@@ -29,8 +29,8 @@ namespace János_Vitéz
         {
             InitializeComponent();
         }
-
-                                         
+    
+           // fájlbeolvasás                              
         private void btnBetolt_Click(object sender, RoutedEventArgs e)
             {
                  StreamReader sr = new StreamReader("JánosVitéz.txt", encoding:Encoding.UTF8);
@@ -54,9 +54,7 @@ namespace János_Vitéz
         */
         
 
-
-
-
+        // Kiemelt szövegrész listázása(félig kész)
         private void btnValogat_Click(object sender, RoutedEventArgs e)
         {
             if (txtSzoveg.Text=="")
