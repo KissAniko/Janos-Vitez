@@ -1,0 +1,34 @@
+﻿<Window x:Class="János_Vitéz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:János_Vitéz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="900">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1.2*"/>
+        </Grid.ColumnDefinitions>
+        
+
+        <ListBox x:Name="lbEredeti" />
+                
+        
+        <StackPanel Grid.Column="1">
+
+            <Button x:Name="btnBetolt" Content="Betölt" Width="100" Height=" 30" Margin="30" Click="btnBetolt_Click"/>
+            <Button x:Name="btnValogat" Content="Válogat" Width="100" Height=" 30" Margin="35" Click="btnValogat_Click"/>
+            <Label Content="Keresett szövegrész:" />
+            <TextBox x:Name="txtSzoveg" Width="200" Height="30"/>
+
+
+        </StackPanel>
+        
+       
+       
+    </Grid>
+</Window>
